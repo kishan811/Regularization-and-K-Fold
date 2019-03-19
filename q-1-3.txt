@@ -1,0 +1,17 @@
+
+At low polynomial degree, we have a high bias and at high polynomial degree, we have a high variance and low bias. 
+So, we regularization to reduce the variance while shifting the bias up a bit.
+
+Hence, regularization is useful when our model is overfitting.
+
+The hyper-parameter λ plays a role in deciding between bias and variance because as λ increases the bias will increase and variance will decrease.
+
+We can find suitable value of lambda using testing error graph, when error is minimum.
+At that value both bias and variance have moderate values, otherwise there is a trade-off b/w bias and variance i.e. one decreases and other increases or vice-versa.
+
+At λ=20, we get minimum test error for Ridge regression.
+If we keep on increasing λ, test error will over-shoot and rise exponentially.
+
+At λ=1(approx), we get minimum test error for Lasso regression.
+If we keep on increasing λ, test error will over-shoot and rise exponentially.
+
